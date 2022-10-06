@@ -1,0 +1,43 @@
+.activity {
+    padding-top: 0;
+}
+
+.activity__list {
+    display: flex;
+}
+
+.activity__item {
+    width: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.activity__thumb {
+    position: relative;
+}
+
+.activity__overlay {
+    background-color: var(--background-activity-overlay);
+    
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.activity__text {
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.activity__title {
+    margin-bottom: 50px;    
+}

@@ -1,0 +1,22 @@
+// socials
+.socials {
+    list-style: none;
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.socials__link {
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+
+.socials__icon {
+    fill: currentColor;
+}

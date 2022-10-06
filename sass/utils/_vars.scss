@@ -1,0 +1,48 @@
+/* Variabels */
+:root {
+    /* Fonts */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --main-font-size: 14px;
+    --main-letter-spacing: 0,03em;
+
+    /* Text colors */
+    --main-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --black-color: #000000;
+    --email-phone-color: rgba(255, 255, 255, 0.6);
+
+    /* BG colors */
+    --primary-white-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --hero-footer-bg-color: #2F303A;
+    --hero-btn-active-bg-color: #188CE8;
+
+    /* Shadows */
+    --btn: rgba(0, 0, 0, 0.15);
+    --modal-team-first: rgba(0, 0, 0, 0.12);
+    --modal-team-second: rgba(0, 0, 0, 0.14);
+    --modal-team-third: rgba(0, 0, 0, 0.2);
+    --modal-tick-unchecked: rgba(0, 0, 0, 0.25);
+    --projects-link-first: rgba(0, 0, 0, 0.12);
+    --projects-link-second: rgba(0, 0, 0, 0.06);
+    --projects-link-third: rgba(0, 0, 0, 0.16);
+
+
+    /* Others */
+    --header-border: #ECECEC;
+    --gallary-border:#EEEEEE;
+    --footer-input-border: rgba(255, 255, 255, 0.3);
+    --modal-btn-close-border: rgba(0, 0, 0, 0.1);
+    --modal-input-comment-border: rgba(33, 33, 33, 0.2);
+    --icons: #AFB1B8;
+    --background-icons-footer: rgba(255, 255, 255, 0.1);
+    --background-activity-overlay: rgba(47, 48, 58, 0.8);
+    --background-gallary-overlay: rgba(33, 150, 243, 0.9);
+    --backdrop-background: rgba(0, 0, 0, 0.2);
+    --placeholder-comment-color: rgba(117, 117, 117, 0.5);
+    --placeholder-subscribe-color: rgba(255, 255, 255, 0.6);
+    --outline: rgba(13, 56, 227, 0.791);
+}

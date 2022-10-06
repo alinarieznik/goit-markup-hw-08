@@ -1,0 +1,23 @@
+/* Base styles */
+body {
+    background-color: var(--primary-white-color);
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--main-text-color);
+}
+ 
+/* Transforming into border-box */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+
