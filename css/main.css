@@ -104,20 +104,19 @@ html {
 
 /* Styles for container */
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -1137,7 +1136,7 @@ html {
 
 .footer__input {
   display: block;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   cursor: pointer;
@@ -1153,6 +1152,17 @@ html {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .footer__input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
