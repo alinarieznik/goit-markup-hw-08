@@ -1,7 +1,8 @@
 /* Modal window */
 .modal {
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
+    
     background-color: var(--primary-white-color);
 
     position: absolute;
@@ -15,7 +16,12 @@
 
     transition-property: transform;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+        min-height: 581px;        
+    }
 }
 
 .modal__btn-close {
@@ -53,11 +59,15 @@
 .modal__title {
 font-weight: 700;
 font-size: 20px;
-line-height: calc(23 / 20);
+line-height: calc(30 / 20);
 text-align: center;
 color: var(--secondary-text-color);
 
 margin-bottom: 12px;
+
+@media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);       
+}
 }
 
 .modal__form-group {
@@ -86,10 +96,15 @@ margin-bottom: 12px;
     display: block;
     width: 100%;
     height: 40px;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 0;
     padding-bottom: 0;
+    
+    @media screen and (min-width: 1200px) {
+        padding-left: 42px;
+        padding-right: 42px;   
+    }    
 
     cursor: pointer;
 
@@ -150,8 +165,14 @@ margin-bottom: 12px;
 
     &::placeholder {
         font-family: 'Roboto';
-        font-size: 12px;
-        line-height: calc(14 / 12);
+        font-size: 14px;
+        line-height: (16 / 14);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 12px;
+            line-height: calc(14 / 12);  
+        }  
+        
         letter-spacing: 0.01em;
         color: var(--placeholder-comment-color);
     }
@@ -202,15 +223,27 @@ margin-bottom: 12px;
 }
 
 .modal__agreement-text {
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    @media screen and (min-width: 1200px) {
+        line-height: calc(24 / 14);
+    } 
+
     user-select: none;
 
 }
 
 .modal__agreement-link {
-line-height: calc(24 / 14);
-text-decoration-line: underline;
-color: var(--accent-color);
+    font-size: 12px;
+    line-height: calc(14 / 12);    
+
+    @media screen and (min-width: 1200px) {
+        line-height: calc(24 / 14);
+    } 
+
+    text-decoration-line: underline;   
+    color: var(--accent-color);
 }
 
 .modal__btn-submit {
