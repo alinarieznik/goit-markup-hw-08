@@ -43,6 +43,12 @@
     }
 }
 
+.team__img {
+    @media screen and (max-width: 767px) {
+        min-width: 450px;
+    }
+}
+
 .team__undertitle {
     @media screen and (max-width: 1199px) {
         padding-bottom: 24px;
