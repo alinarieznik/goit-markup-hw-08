@@ -1044,22 +1044,8 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (max-width: 767px) {
-  .team__item {
-    max-width: 450px;
-  }
   .team__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    width: 354px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .team__img {
-    min-width: 290px;
   }
 }
 

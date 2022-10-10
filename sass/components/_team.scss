@@ -34,18 +34,6 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
-    
-        max-width: 450px; 
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
-}
-
-.team__img {
-    @media screen and (max-width: 767px) {
-        min-width: 290px;
     }
 }
 
