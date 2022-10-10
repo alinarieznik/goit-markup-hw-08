@@ -3,6 +3,10 @@
     min-width: 450px;
     min-height: 609px;
     
+    @media screen and (max-width: 479px) {
+        min-width: 290px;  
+    }
+    
     background-color: var(--primary-white-color);
 
     position: absolute;
@@ -230,6 +234,11 @@ margin-bottom: 12px;
     font-size: 12px;
     line-height: calc(14 / 12);
 
+    @media screen and (max-width: 479px) {
+        font-size: 7px;
+        line-height: calc(8 / 7); 
+    }
+
     @media screen and (min-width: 1200px) {
         line-height: calc(24 / 14);
     } 
@@ -240,7 +249,12 @@ margin-bottom: 12px;
 
 .modal__agreement-link {
     font-size: 12px;
-    line-height: calc(14 / 12);    
+    line-height: calc(14 / 12);   
+    
+    @media screen and (max-width: 479px) {
+        font-size: 7px;
+        line-height: calc(8 / 7); 
+    }
 
     @media screen and (min-width: 1200px) {
         line-height: calc(24 / 14);

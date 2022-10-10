@@ -11,20 +11,22 @@
 
 .clients__list {
     display: flex;
-    gap: 30px;
-
-    @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
-    }     
+    gap: 30px;   
 }
 
 .clients__item {
     height: 92px;   
 
-    @media screen and (max-width: 767px) {
-        max-width: 210px;
+    @media screen and (max-width: 479px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 210px;
     }   
-    @media screen and (max-width: 1199px) {
+
+    @media screen and (min-width: 768px) {
         width: 226px;
     }
 

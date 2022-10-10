@@ -19,6 +19,7 @@
         transform: translateX(0);
       }
 
+
       @media screen and (min-width: 768px) {
         display: none;
       }
@@ -88,6 +89,11 @@
 
     display: block;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 479px) {
+        font-size: 27px;
+        line-height: (32 / 27);
+    }
         
 }
 
@@ -109,6 +115,11 @@
     line-height: (22 / 18);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+        font-size: 12px;
+        line-height: (14 / 12);
+    }
 
     &:not(:last-child) {
         padding-right: 10px;
