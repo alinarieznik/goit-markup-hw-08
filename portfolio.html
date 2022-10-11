@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-       <!-- Header -->
+    <!-- Header -->
     <header class="header">
         <div class="container header__container">
             <nav class="nav">
@@ -20,8 +20,8 @@
                     Web<span class="logo__dark">Studio</span>
                  </a>
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a></li>
-                    <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студія</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
                 </ul>
             </nav>  
@@ -43,6 +43,36 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="header__button js-open-menu" aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menuopen"></use>
+                </svg>
+            </button>
+            <!-- Mobile menu -->
+            <div class="menu__container js-menu-container" id="mobile-menu">
+                <button class="menu__toggle js-close-menu">
+                    <svg width="40" height="40">
+                        <use href="./images/icons.svg#icon-menuclose"></use>
+                    </svg>
+                </button>
+                <ul class="menu__mobile">
+                    <li class="menu__position"><a href="./index.html" class="menu__item">Студія</a></li>
+                    <li class="menu__position"><a href="./portfolio.html" class="menu__item menu__item--current">Портфоліо</a></li>
+                    <li class="menu__position"><a href="#" class="menu__item">Контакти</a></li>
+                  </ul>
+                <ul class="menu__contacts">
+                    <li><a href="tel:+380961111111" class="menu__tel">+38 096 111 11 11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="menu__email">info@devstudio.com</a></li>
+                  </ul>
+                <ul class="menu__socials">
+                  <li class="menu__social-item"><a href="#" class="menu__social-link">Instagram</a></li>
+                  <li class="menu__social-item"><a href="#" class="menu__social-link">Twitter</a></li>
+                  <li class="menu__social-item"><a href="#" class="menu__social-link">Facebook</a></li>
+                  <li class="menu__social-item"><a href="#" class="menu__social-link">LinkedIn</a></li>
+                </ul>
+              </div>
+
         </div>          
     </header>
 
@@ -72,7 +102,18 @@
                     <li class="projects__item">
                             <a class="projects__link" href="#">
                                 <div class="projects__thumb">
-                                    <img src="./images/portfolio/img-1.jpg" alt="Сторінка веб-сайту" width="370">
+                                    <img 
+                                    srcset="
+                                    ./images/portfolio/img-1_354.jpg 354w,
+                                    ./images/portfolio/img-1_370.jpg 370w,
+                                    ./images/portfolio/img-1_450.jpg 450w,
+                                    ./images/portfolio/img-1_708.jpg 708w,
+                                    ./images/portfolio/img-1_740.jpg 740w,
+                                    ./images/portfolio/img-1_900.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                    src="./images/portfolio/img-1_450.jpg" 
+                                    alt="Сторінка веб-сайту" 
+                                    >
                                     <div class="projects__overlay">
                                         <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -86,7 +127,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-2.jpg" alt="Два баскетболісти" width="370">
+                                <img 
+                                srcset="
+                                ./images/portfolio/img-2_354.jpg 354w,
+                                ./images/portfolio/img-2_370.jpg 370w,
+                                ./images/portfolio/img-2_450.jpg 450w,
+                                ./images/portfolio/img-2_708.jpg 708w,
+                                ./images/portfolio/img-2_740.jpg 740w,
+                                ./images/portfolio/img-2_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-2_450.jpg" 
+                                alt="Два баскетболісти" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -100,7 +152,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-3.jpg" alt="Логотип ресторану морської кухні" width="370">
+                                <img 
+                                srcset="
+                                ./images/portfolio/img-3_354.jpg 354w,
+                                ./images/portfolio/img-3_370.jpg 370w,
+                                ./images/portfolio/img-3_450.jpg 450w,
+                                ./images/portfolio/img-3_708.jpg 708w,
+                                ./images/portfolio/img-3_740.jpg 740w,
+                                ./images/portfolio/img-3_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-3_450.jpg" 
+                                alt="Логотип ресторану морської кухні" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -114,7 +177,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-4.jpg" alt="Навушники" width="370">
+                                <img 
+                                srcset="
+                                ./images/portfolio/img-4_354.jpg 354w,
+                                ./images/portfolio/img-4_370.jpg 370w,
+                                ./images/portfolio/img-4_450.jpg 450w,
+                                ./images/portfolio/img-4_708.jpg 708w,
+                                ./images/portfolio/img-4_740.jpg 740w,
+                                ./images/portfolio/img-4_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-4_450.jpg" 
+                                alt="Навушники" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -128,7 +202,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-5.jpg" alt="Дви коробки" width="370">
+                                <img 
+                                srcset="
+                                ./images/portfolio/img-5_354.jpg 354w,
+                                ./images/portfolio/img-5_370.jpg 370w,
+                                ./images/portfolio/img-5_450.jpg 450w,
+                                ./images/portfolio/img-5_708.jpg 708w,
+                                ./images/portfolio/img-5_740.jpg 740w,
+                                ./images/portfolio/img-5_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-5_450.jpg" 
+                                alt="Дви коробки" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -142,7 +227,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-6.jpg" alt="Монітор" width="370">
+                                <img 
+                                srcset="
+                                ./images/portfolio/img-6_354.jpg 354w,
+                                ./images/portfolio/img-6_370.jpg 370w,
+                                ./images/portfolio/img-6_450.jpg 450w,
+                                ./images/portfolio/img-6_708.jpg 708w,
+                                ./images/portfolio/img-6_740.jpg 740w,
+                                ./images/portfolio/img-6_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-6_450.jpg" 
+                                alt="Монітор" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -156,7 +252,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-7.jpg" alt="Розгорнутий журнал" width="370">
+                                <img 
+                                srcset="
+                                ./images/portfolio/img-7_354.jpg 354w,
+                                ./images/portfolio/img-7_370.jpg 370w,
+                                ./images/portfolio/img-7_450.jpg 450w,
+                                ./images/portfolio/img-7_708.jpg 708w,
+                                ./images/portfolio/img-7_740.jpg 740w,
+                                ./images/portfolio/img-7_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-7_450.jpg" 
+                                alt="Розгорнутий журнал" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -170,7 +277,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-8.jpg" alt="Бірка" width="370">
+                                <img
+                                srcset="
+                                ./images/portfolio/img-8_354.jpg 354w,
+                                ./images/portfolio/img-8_370.jpg 370w,
+                                ./images/portfolio/img-8_450.jpg 450w,
+                                ./images/portfolio/img-8_708.jpg 708w,
+                                ./images/portfolio/img-8_740.jpg 740w,
+                                ./images/portfolio/img-8_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-8_450.jpg" 
+                                alt="Бірка" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -184,7 +302,18 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="projects__thumb">
-                                <img src="./images/portfolio/img-9.jpg" alt="Робота за ноутбуком" width="370">
+                                <img 
+                                srcset="
+                                ./images/portfolio/img-9_354.jpg 354w,
+                                ./images/portfolio/img-9_370.jpg 370w,
+                                ./images/portfolio/img-9_450.jpg 450w,
+                                ./images/portfolio/img-9_708.jpg 708w,
+                                ./images/portfolio/img-9_740.jpg 740w,
+                                ./images/portfolio/img-9_900.jpg 900w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                                src="./images/portfolio/img-9_450.jpg" 
+                                alt="Робота за ноутбуком" 
+                                >
                                 <div class="projects__overlay">
                                     <p class="projects__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -280,5 +409,13 @@
                 </div>
             </div>
         </footer>
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/menu.js"></script>
 </body>
 </html>

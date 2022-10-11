@@ -1464,14 +1464,34 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 34px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .projects__btn-list {
+    margin-bottom: 40px;
+    margin-right: auto;
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__btn-list {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__btn-list {
+    margin-bottom: 50px;
+  }
 }
 
-.projects__btn-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .projects__btn-item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .projects__btn {
@@ -1518,15 +1538,37 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+}
+@media screen and (max-width: 767px) {
+  .projects__gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .projects__gallery {
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__gallery {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 
-.projects__item {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+        flex-basis: calc(33.3333333333% - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .projects__thumb {
@@ -1576,6 +1618,12 @@ html {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+@media screen and (max-width: 479px) {
+  .projects__overlay-text {
+    font-size: 16px;
+    line-height: 1.5625;
+  }
+}
 
 .projects__link {
   display: block;
@@ -1605,6 +1653,11 @@ html {
   border-bottom: 1px solid var(--gallary-border);
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .projects__desc {
+    padding-right: 12px;
+  }
+}
 .projects__undertitle {
   font-weight: 700;
   font-size: 18px;
